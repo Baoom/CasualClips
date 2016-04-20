@@ -1,0 +1,67 @@
+@-webkit-keyframes wiggle {
+    from {-webkit-transform: rotateZ(3deg);}
+    50% {-webkit-transform: rotateZ(-3deg);}
+    to {-webkit-transform: rotateZ(3deg);}
+}
+
+@-moz-keyframes wiggle {
+    from {-moz-transform: rotateZ(3deg);}
+    50% {-moz-transform: rotateZ(-3deg);}
+    to {-moz-transform: rotateZ(3deg);}
+}
+
+@-ms-keyframes wiggle {
+    from {-ms-transform: rotateZ(3deg);}
+    50% {-ms-transform: rotateZ(-3deg);}
+    to {-ms-transform: rotateZ(3deg);}
+}
+
+@-o-keyframes wiggle {
+    from {-o-transform: rotateZ(3deg);}
+    50% {-o-transform: rotateZ(-3deg);}
+    to {-o-transform: rotateZ(3deg);}
+}
+
+@keyframes wiggle {
+    from {transform: rotateZ(3deg);}
+    50% {transform: rotateZ(-3deg);}
+    to {transform: rotateZ(3deg);}
+}
+     
+.wiggler {
+    -webkit-animation-name: wiggle;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+    
+    -moz-animation-name: wiggle;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease;
+    
+    -ms-animation-name: wiggle;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: ease;
+    
+    -o-animation-name: wiggle;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: ease;
+    
+    animation-name: wiggle;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+     
+.wiggle1{
+    -webkit-animation-duration: .6s;
+    -moz-animation-duration: .6s;
+    -ms-animation-duration: .6s;
+    -o-animation-duration: .6s;
+    animation-duration: .6s;
+}
+     
+.wiggle2{
+    -webkit-animation-duration: .3s;
+    -moz-animation-duration: .3s;
+    -ms-animation-duration: .3s;
+    -o-animation-duration: .3s;
+    animation-duration: .3s;
+}

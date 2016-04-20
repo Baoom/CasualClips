@@ -1,0 +1,350 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Bo Lovenhjelm
+Updated: November 2014
+Notes:	 Hand coded for IT Gymnasiet.se
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+
+
+#featuresHeading {
+  padding: 40px 0;
+  text-align: left;
+}
+
+.features {
+	text-align: center;
+}
+
+.features img {
+	margin: 20px 0;
+}
+
+#inputMessage {
+	margin-bottom: 15px;
+}
+
+footer {
+	background: #333;
+	color: #eee;
+	font-size: 11px;
+	padding: 20px;
+}
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	padding-top: 80px;
+}
+
+.well .page-header {
+	margin-top: 0;
+}
+
+.well .page-header h1 {
+	margin-top: 0;
+}
+
+ul.unstyled {
+	list-style: none;
+	padding: 0;
+}
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+#searchInput {
+	width: 200px;
+}
+
+.navbar-brand {
+	padding: 14px 15px;
+}
+
+.navbar-shadow {
+	-webkit-box-shadow: 0px 0px 9px 3px rgba(50, 50, 50, 0.35);
+	-moz-box-shadow:    0px 0px 9px 3px rgba(50, 50, 50, 0.35);
+	box-shadow:         0px 0px 9px 3px rgba(50, 50, 50, 0.35);
+	 /* optional navbar drop shadow - create shadow at: http://css3gen.com/box-shadow/ */
+	}
+}
+   
+   
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+#myCarousel {
+	margin-top: 20px;
+}
+
+.carousel-caption {
+	font-size: 24px;
+}
+
+.carousel-caption h4 {
+	font-size: 32px;
+}
+
+#myCarousel .item { height: 400px; }
+
+#slide1 {
+	background: url('../images/nike_magista.jpg') top center no-repeat;
+}
+
+#slide2 {
+	background: url('../images/neymar.jpg') top center no-repeat;
+}
+
+#slide3 {
+	background: url('../images/football_shop.jpg') top center no-repeat;
+}
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+.circle {
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	background-color:yellow;
+	color: black;
+	padding: 15px;
+	margin: auto auto;
+}
+.alert {
+	margin-top: 20px;
+	display: none;
+}
+
+.well {
+	margin: 20px 0;
+}
+
+.tabbable img.thumbnail {
+	margin: 0 20px 10px 0;
+}
+
+.thumbnails {
+	margin: 20px 0;
+}
+
+.thumbnail {
+	position: relative;
+}
+
+.thumbnail h3 {
+	font-size: 16px;
+	margin: 0 0 10px;
+	line-height: 20px;
+}
+
+.thumbnail .price {
+	font-size: 22px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	padding: 10px;
+}
+
+.thumbnail .price sup {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.thumbnail span.glyphicon {
+	margin-right: 5px;
+}
+
+.glyphicon-heart {
+	color: #C9302C;
+	margin-right: 2px;
+
+}
+
+.fa-heart {
+	color: #C9302C;
+	margin: 0 2px;
+
+}
+
+.fa-map-marker {
+	color:#F6544A;
+}
+
+.fish {
+	font-size: 90%;
+	font-weight: 300;
+
+}
+
+.codefish {
+	font-size: 100%;
+	font-weight: 300;
+	font-style: italic;
+	letter-spacing: 1px;
+
+}
+
+.vertical-spacer {
+	display: block;
+	width: 100%;
+	height: 30px; /* An empty block with specified height */
+
+}
+
+.btn:focus {
+  outline: none; /* Removes ugly dotted outline on buttons */
+}
+
+p .pull-left{
+	margin-right: 8px; /* Sets right margin to 8 pixels on left-floated thumbnails */
+}
+
+p .pull-right{
+	margin-left: 8px; /* Sets left margin to 8 pixels on right-floated thumbnails */
+}
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+	
+	.thumbnail .price {
+		font-size: 14px;
+	}
+	
+	.thumbnail .price sup {
+		font-size: 10px;
+	}
+
+	.form-control {
+		margin-right: 4px; /* Set space of 4px between input field and button on small screens */
+	}
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	
+	#myCarousel .item { height: 310px; }
+	.carousel-inner .item img { height: 100%; width: 100%; }
+	
+	#slide1 {
+		background: url('../images/nike_magista.jpg') top center no-repeat;
+	}
+	
+	#slide2 {
+		background: url('../images/neymar.jpg') top center no-repeat;
+	}
+	
+	#slide3 {
+		background: url('../images/football_shop.jpg') top center no-repeat;
+	}
+	
+	.carousel-caption {
+		font-size: 16px;
+	}
+	
+	.carousel-caption h4 {
+		font-size: 22px;
+	}
+
+	.form-control {
+		margin-right: 4px; /* Set space of 4px between input field and button on medium screens */
+	}
+
+	.features img {
+		margin: 20px -6px;
+	}
+	
+}
+
+/* Medium desktop */
+@media (max-width: 992px) {
+
+	.features img {
+		margin: 20px -6px;
+	}
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+	#myCarousel .item { height: 500px; }
+	
+	#slide1 {
+		background: url('../images/nike_magista.jpg') top center no-repeat;
+	}
+	
+	#slide2 {
+		background: url('../images/neymar.jpg') top center no-repeat;
+	}
+	
+	#slide3 {
+		background: url('../images/football_shop.jpg') top center no-repeat;
+	}
+
+}
+.panel-title {
+	font-weight: 700
+
+}
+body {
+  background-color:  ;
+}
+
+
+.btn-black {
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #474949;
+}
+
+.btn-black:hover,
+.btn-black:focus,
+.btn-black:active,
+.btn-black.active {
+  background-color: #000000;
+  border-color: #2e2f2f;
+}
+
+.btn-black.disabled,
+.btn-black[disabled],
+fieldset[disabled] .btn-black,
+.btn-black.disabled:hover,
+.btn-black[disabled]:hover,
+fieldset[disabled] .btn-black:hover,
+.btn-black.disabled:focus,
+.btn-black[disabled]:focus,
+fieldset[disabled] .btn-black:focus,
+.btn-black.disabled:active,
+.btn-black[disabled]:active,
+fieldset[disabled] .btn-black:active,
+.btn-black.disabled.active,
+.btn-black[disabled].active,
+fieldset[disabled] .btn-black.active {
+  background-color: #000000;
+  border-color: #474949;
+}
+
+
